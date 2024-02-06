@@ -1,6 +1,5 @@
 import sqlite3
 from pathlib import Path
-
 import numpy as np
 import matplotlib.pyplot as plt
 import seaborn as sns
@@ -8,7 +7,7 @@ import seaborn as sns
 # Creating an empty database
 Path("bank.db").touch()
 
-# Connect to database
+# Connecting to database and creating a cursor
 conn = sqlite3.connect("bank.db")
 c = conn.cursor()
 
